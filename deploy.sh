@@ -172,7 +172,7 @@ if $INPUT_DRY_RUN; then
   echo "➤ Dry run: Files not committed."
 else
   echo "➤ Committing files..."
-  #svn commit -m "Update to version $VERSION from GitHub" --no-auth-cache --non-interactive  --username "$SVN_USERNAME" --password "$SVN_PASSWORD"
+  svn commit -m "Update to version $VERSION from GitHub" --no-auth-cache --non-interactive  --username "$SVN_USERNAME" --password "$SVN_PASSWORD"
 fi
 
 if $INPUT_GENERATE_ZIP; then
